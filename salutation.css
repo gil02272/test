@@ -1,0 +1,85 @@
+.img:hover,
+.img:focus {
+  width:25px;
+  height:25px;
+    width : 50px; height : 50px;
+  border: none;
+  -moz-border-radius : 25px;
+  -webkit-border-radius : 25px;
+  border-radius : 25px;
+}
+
+.img {
+  width:25px;
+  height:25px;
+    width : 40px; height : 40px;
+  border: none;
+  -moz-border-radius : 20px;
+  -webkit-border-radius : 20px;
+  border-radius : 20px;
+}
+.titre{
+  width: 1250px;
+  border: 1px solid #fff;
+  border-radius: 18px;
+  outline: 0;
+  padding: 8px 12px;
+  text-align: center;
+  text-decoration: none;
+  font: bold 12px Verdana;
+}
+.titre{
+  color: #fff;
+  background-color: #333;
+  transition: all 1s ease-out;
+}
+.exemple {
+  background-color: white;
+  
+}
+body {
+	  background: linear-gradient(180deg,gray, #b6b3b3,gray,#b6b3b3, gray);
+	  background-repeat:none;
+}
+h1 {
+	margin: 0 0 10px;
+	padding: 0;
+	color: #fff;
+	font-size: 24px;
+}
+.myInput {
+  background-image: url('/css/searchicon.png'); /* Add a search icon to input */
+  background-position: 10px 12px; /* Position the search icon */
+  background-repeat: no-repeat; /* Do not repeat the icon image */
+  width: 100%; /* Full-width */
+  font-size: 16px; /* Increase font-size */
+  padding: 12px 20px 12px 40px; /* Add some padding */
+  border: 1px solid #ddd; /* Add a grey border */
+  margin-bottom: 12px; /* Add some space below the input */
+}
+
+.myTable {
+  border-collapse: collapse; /* Collapse borders */
+  width: 100%; /* Full-width */
+  border: 1px solid #ddd; /* Add a grey border */
+  font-size: 18px; /* Increase font-size */
+}
+
+.myTable th, .myTable td {
+  text-align: left; /* Left-align text */
+  padding: 12px; /* Add padding */
+}
+
+.myTable tr {
+  /* Add a bottom border to all table rows */
+  border-bottom: 1px solid #ddd;
+}
+
+.myTable tr.header, .myTable tr:hover {
+  /* Add a grey background color to the table header and on hover */
+  background-color: #f1f1f1;
+}
+.carré{
+	width:50px;
+	height:50px;
+}

@@ -1,0 +1,172 @@
+
+		
+	
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="salutation.css">
+		<link rel="icon" type="image/png" href="Bonjour.png">
+		<title>The Beatles</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myTable {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+  font-size: 18px;
+}
+
+#myTable th, #myTable td {
+  text-align: left;
+  padding: 12px;
+}
+
+#myTable tr {
+  border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header, #myTable tr:hover {
+  background-color: #f1f1f1;
+}
+</style>
+</head>
+	<body>
+		<div class="exemple">
+		<center><IMG src="the.png"></center></div>
+		<br><div class="titre"><center><font size=7>Discographie</font></center></div></br>
+		<a href="idex.html"><IMG src="arrière.jpg" class="img" title="Accueil"></a>
+	<br></br>
+<h2>Tous les albums des beatles</h2>
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Nom de l'album.." title="Type in a name">
+
+<table id="myTable">
+  <tr class="header">
+    <th style="width:40%;">Titre</th>
+    <th style="width:30%;">Date</th>
+	<th style="width:30%;">Deezer</th>
+  </tr>
+  <tr>
+    <td>PLEASE PLEASE ME</td>
+    <td>1963</td>
+	<td><a href="https://www.deezer.com/en/album/12047942"><img src="1.jpg" class="carré"></a></td>
+  </tr>
+  <tr>
+     <tr>
+    <td>WITH THE BEATLES</td>
+    <td>1963</td>
+	<td><a href="https://www.deezer.com/fr/album/12047962"><img src="2.jpg" class="carré"></a></td>
+  </tr>
+  </tr>
+     <tr>
+    <td>A HARD'S DAY NIGHT</td>
+    <td>1964</td>
+	<td><a href="https://www.deezer.com/fr/album/12047950"><img src="3.jpg" class="carré"></a></td>
+  </tr>
+     <tr>
+    <td>BEATLES FOR SALE</td>
+    <td>1964</td>
+	<td><a href="https://www.deezer.com/fr/album/12047946"><img src="4.jpg" class="carré"></a></td>
+  </tr>
+  </tr>
+     <tr>
+    <td>HELP</td>
+    <td>1965</td>
+	<td><a href="https://www.deezer.com/fr/album/12047944"><img src="5.jpg" class="carré"></a></td>
+  </tr>
+     <tr>
+    <td>RUBBER SOUL</td>
+    <td>1965</td>
+	<td><a href="https://www.deezer.com/fr/album/12047936"><img src="6.jpg" class="carré"></a></td>
+  </tr>
+       <tr>
+    <td>REVOLVER</td>
+    <td>1966</td>
+	<td><a href="https://www.deezer.com/fr/album/12047948"><img src="7.jpg" class="carré"></a></td>
+  </tr>
+       <tr>
+    <td>SGT.PEPPER'S LONELY HEARTS CLUB BAND </td>
+    <td>1967</td>
+	<td><a href="https://www.deezer.com/fr/album/12047960"><img src="8.jpg" class="carré"></a></td>
+  </tr>
+         <tr>
+    <td>MAGICAL MYSTERY TOUR </td>
+    <td>1967</td>
+	<td><a href="https://www.deezer.com/fr/album/12047938"><img src="9.jpg" class="carré"></a></td>
+  </tr>
+           <tr>
+    <td>THE BEATLES </td>
+    <td>1968</td>
+	<td><a href="https://www.deezer.com/fr/album/12047934"><img src="10.jpg" class="carré"></a></td>
+  </tr>
+             <tr>
+    <td>YELLOW SUBMARINE </td>
+    <td>1969</td>
+	<td><a href="https://www.deezer.com/fr/album/12047964"><img src="11.jpg" class="carré"></a></td>
+  </tr>
+               <tr>
+    <td>ABBEY ROAD </td>
+    <td>1969</td>
+	<td><a href="https://www.deezer.com/fr/album/12047952"><img src="12.jpg" class="carré"></a></td>
+  </tr>
+                <tr>
+    <td>LET IT BE</td>
+    <td>1970</td>
+	<td><a href="https://www.deezer.com/fr/album/12047958"><img src="13.jpg" class="carré"></a></td>
+  </tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</table>
+
+<script>
+function myFunction() {
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }       
+  }
+}
+</script>
+
+</body>
+</html>
+		
+		
